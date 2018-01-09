@@ -8,19 +8,25 @@ public class Galgje {
 		System.out.println("Het te raden woord: ");
 
 		String teRadenWoord = "Boot";
+		int aantalBeurten = 20;
 		
 		System.out.println(teRadenWoord);
 		Scanner sc = new Scanner(System.in);
-	    String str = sc.nextLine();
-	    System.out.println(str);	    
 	    
-	    if(teRadenWoord.contains(str)) {
-	    	System.out.println("Yes, deze letter zit erin!");
-	    } else {
-	    	System.out.println("Helaas, probeer het nog eens..");
+	    for(int i = 0; i < aantalBeurten; i++) {
+	    	
+	    	String str = sc.nextLine();
+	    
+		    if(teRadenWoord.contains(str)) {
+		    	System.out.println("Yes, deze letter zit erin!");
+		    } else {
+		    	System.out.println("Helaas, probeer het nog eens..");
+		    }
+		    
+		    System.out.println("Het spel is klaar.");
+
 	    }
-	    
-	    System.out.println("Het spel is klaar.");
+	     
 	}
 
 }
