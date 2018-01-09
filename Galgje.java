@@ -15,9 +15,9 @@ public class Galgje {
 	    System.out.println(str);	    
 	    
 	    if(teRadenWoord.contains(str)) {
-	    	System.out.println("ja");
+	    	System.out.println("Yes, deze letter zit erin!");
 	    } else {
-	    	System.out.println("nee");
+	    	System.out.println("Helaas, probeer het nog eens..");
 	    }
 	    
 	    System.out.println("Het spel is klaar.");
